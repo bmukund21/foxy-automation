@@ -17,4 +17,4 @@ class searchPageScreen {
     }
 }
 
-module.exports = new searchPageScreen();
+export default new searchPageScreen();

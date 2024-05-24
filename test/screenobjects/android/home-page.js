@@ -15,6 +15,10 @@ class homePageScreen {
     get genderButton() {
         return $('//*[@resource-id="men"]');
     }
+
+    get profileButtonHeader() {
+        return $('//*[@resource-id="profile-icon"]');
+    }
 }
 
 module.exports = new homePageScreen();

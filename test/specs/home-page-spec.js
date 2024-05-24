@@ -18,15 +18,17 @@ it('gender specific page', async () => {
 });
 
 
-it('empty cart and product navigation', async () => {
+it.only('empty cart and product navigation', async () => {
   await driver.pause(2000);
   //open cart page from app header
   const headerCartIcon = await $('//*[@resource-id="header-cart-icon"]');
   await headerCartIcon.click();
-  await driver.pause(2000);
+  await driver.pause(2000);    
 
   //click on add to bag button
-  const listCartBtn = await $('//*[@resource-id="list-add-to-bag-Button"]');
+  const emptyCartText = await $(
+    '//android.widget.TextView[@text="Your bag looks empty"]',
+    );
   await listCartBtn.click();
   await driver.pause(6000);
 
@@ -38,7 +40,7 @@ it('empty cart and product navigation', async () => {
   //expand and click on cash on delivery button
   const expandCOD = await $(
     '//android.widget.TextView[@text="Cash On Delivery"]',
-  );
+    );
   await expandCOD.click();
   await driver.pause(2000);
   await checkoutBtn.click();

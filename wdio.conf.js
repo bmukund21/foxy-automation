@@ -56,13 +56,13 @@ exports.config = {
     capabilities: [{
         // capabilities for local Appium web tests on an Android Emulator
             'appium:platformName': 'Android',
-            'appium:platformVersion': '13',
+            'appium:platformVersion': '14',
             'appium:deviceName': 'RZCT407VYJM',
             'appium:automationName': 'uiAutomator2',
             'appium:appPackage':'in.foxy',
             'appium:noReset': true,
             'appium:appActivity': 'in.foxy.MainActivity',
-            'appium:autoGrantPermissions' : true
+            'appium:autoGrantPermissions' : true        
             // 'appium:app': path.join(process.cwd(),'app/android/app-Foxy-arm64-v8a-release.apk')
     }],
 
