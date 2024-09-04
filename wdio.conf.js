@@ -56,8 +56,8 @@ exports.config = {
     capabilities: [{
         // capabilities for local Appium web tests on an Android Emulator
             'appium:platformName': 'Android',
-            'appium:platformVersion': '14',
-            'appium:deviceName': 'RZCT407VYJM',
+            'appium:platformVersion': '13',
+            'appium:deviceName': 'R3CN20RER5E',
             'appium:automationName': 'uiAutomator2',
             'appium:appPackage':'in.foxy',
             'appium:noReset': true,
