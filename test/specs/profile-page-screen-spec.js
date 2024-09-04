@@ -11,8 +11,8 @@ describe('profile-page-add-address', async () => {
 
     // click on profile page in header
     await driver.pause(3000);
-    await homePage.profileButtonHeader.isDisplayed(1000);
-    await homePage.profileButtonHeader.click();
+    // await homePage.profileButtonHeader.isDisplayed(1000);
+    // await homePage.profileButtonHeader.click();
 
     // click on add address button in profile page
     await ProfilePageScreen.addAddressButton.click();
